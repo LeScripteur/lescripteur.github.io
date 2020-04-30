@@ -10,7 +10,6 @@ body{
 .header{ 
   height: 30px;
   background: -webkit-linear-gradient(#d0a439, #e28b52, #d36e4f);
-
   -webkit-background-size: cover;
   background-size: cover; 
   background-repeat: no-repeat;
@@ -43,7 +42,6 @@ body{
 }
 .menu a{
   color: white;
-
   text-decoration: none;
   padding: 0 5px;
   transition: 0.2s;
