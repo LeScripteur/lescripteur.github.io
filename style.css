@@ -1,21 +1,19 @@
   /*background-image: url("barre.png");*/
 body{
-  background-color: #f1f1f1;
 }
 *{
   margin: 0;
   padding: 0;
-  font-family: Andale Mono, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .header{ 
-  height: 30px;
-  background: -webkit-linear-gradient(#d0a439, #e28b52, #d36e4f);
+  height: 40px;
+  background: #ddd;
   -webkit-background-size: cover;
   background-size: cover; 
   background-repeat: no-repeat;
   padding: 10px 20px;
-  color: #fff;
-  box-shadow: inset 0 0 5px #9e623a;
+  box-shadow: inset 0 0 2px #000;
 }
 .imglogo{
   height: 50px;
@@ -34,21 +32,20 @@ body{
   width: 1000px;
 }
 .menu{
-  font-size: 20px;
-  word-spacing: 5px;
+  font-size: 30px;
+  word-spacing: 10px;
   float: right;
-  line-height: 30px;
+  line-height: 40px;
   padding: 0 30px 0 0 ;
 }
 .menu a{
-  color: white;
+  color: rgb(66, 66, 66);
   text-decoration: none;
-  font-weight:bold;
   padding: 0 5px;
   transition: 0.2s;
 }
 .show-menu-btn,.hide-menu-btn{
-  color: #f1f1f1;
+  color: color: rgb(66, 66, 66);;
   transition: 0.2s;
   font-size: 30px;
   cursor: pointer;
@@ -59,7 +56,7 @@ body{
   float: right;
 }
 .show-menu-btn i{
-  line-height: 100px;
+  line-height: 40px;
 }
 .menu a:hover,
 .show-menu-btn:hover,
@@ -71,10 +68,40 @@ body{
   visibility: hidden;
   z-index: -1111;
 }
-.content{
-  padding: 0 20px;
+.content-laurel{
+  height: 500px;
+  background: -webkit-linear-gradient( #A4B494, #BEC5AD);
+  -webkit-background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
-.content p{
+.content-laurel p{
+  padding: 0 20px;
+  text-decoration: none;
+  text-align: justify;
+}
+.content-fire{
+  height: 500px;
+  background: -webkit-linear-gradient( #EF6351, #F38375);
+  -webkit-background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+.content-fire p{
+  padding: 0 20px;
+  text-decoration: none;
+  text-align: justify;
+}
+.content-metal{
+  height: 500px;
+  background: -webkit-linear-gradient(#2D3142,#4F5D75);
+  -webkit-background-size: cover;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+.content-metal p{
+  padding: 0 20px;
+  text-decoration: none;
   text-align: justify;
 }
 @media screen and (max-width:1000px) {
@@ -85,7 +112,7 @@ body{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: -webkit-linear-gradient(#d0a439, #e28b52, #d36e4f);
+    background: -webkit-linear-gradient(#e28b52, #d36e4f);
     -webkit-background-size: cover;
     background-size: cover; 
     background-position: center center;
@@ -93,7 +120,7 @@ body{
     right: -100%;
     top: 0;
     text-align: center;
-    padding: 80px 0;
+    padding: 200px 0;
     line-height: normal;
     transition: 0.5s;
   }
