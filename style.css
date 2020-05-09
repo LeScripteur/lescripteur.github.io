@@ -5,7 +5,7 @@
 }
 .header{ 
   height: 40px;
-  background: #ddd;
+  background: rgb(66, 66, 66);
   -webkit-background-size: cover;
   background-size: cover; 
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   padding: 0 30px 0 0 ;
 }
 .menu a{
-  color: rgb(66, 66, 66);
+  color: #cbcbcb;
   text-decoration: none;
   padding: 0 5px;
   transition: 0.2s;
@@ -35,7 +35,7 @@
 .menu a:hover,
 .show-menu-btn:hover,
 .hide-menu-btn:hover{
-  color: #dfdfdf; 
+  color: #fff; 
 }
 .content-laurel{
   height: 500px;
@@ -43,11 +43,19 @@
   -webkit-background-size: cover;
   background-size: cover; 
   background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 .content-laurel p{
   padding: 0 20px;
   text-decoration: none;
   text-align: justify;
+  color: #ddd;
 }
 .content-fire{
   height: 500px;
@@ -55,11 +63,19 @@
   -webkit-background-size: cover;
   background-size: cover; 
   background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 .content-fire p{
   padding: 0 20px;
   text-decoration: none;
   text-align: justify;
+  color: #ddd;
 }
 .content-metal{
   height: 500px;
@@ -67,9 +83,26 @@
   -webkit-background-size: cover;
   background-size: cover; 
   background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 .content-metal p{
   padding: 0 20px;
   text-decoration: none;
   text-align: justify;
+  color: #ddd;
+}
+::selection {
+  text-shadow: none;
+  background: #c7c7c7;
+}
+
+*, :after, :before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
