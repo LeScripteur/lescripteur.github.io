@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>LeScripteur</title>
 	<link rel="icon" href=".\media\logo-c.png">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </head>
 <div class="loader-container">
@@ -46,21 +46,30 @@ Pellentesque ornare interdum tellus vitae scelerisque. In eu nisi vel arcu vesti
 </div>
 </div>
 <footer>
-	<div >
-    <header>
-		<div id="foot1">a</div>
-		<div id="foot2">aa</div>
-		<div id="foot3">aaa</div>
-		<div id="foot4">aaaa</div>
-		<div id="foot5">aaaaa</div>
-		<div id="foot6">aaaaaa</div>
-		<div id="foot7">aaaaaaa</div>
-		<div id="foot8">aaaaaaaa</div>
-		<div id="foot9">aaaaaaaaa</div>
-		<div id="foot10">aaaaaaaaaa</div>		
-    </header> 
+	<div class="footer-container">
+	  <div class="left-col">
+		<img src="logo.png" alt="" class="logo">
+		<div class="social-media">
+		  <a href="#"><i class="fab fa-facebook-f"></i></a>
+		  <a href="#"><i class="fab fa-twitter"></i></a>
+		  <a href="#"><i class="fab fa-instagram"></i></a>
+		  <a href="#"><i class="fab fa-youtube"></i></a>
+		  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+		<p class="rights-text">© 2020 Created By DarkCode All Rights Reserved.</p>
+	  </div>
+
+	  <div class="right-col">
+		<h1>Our Newsletter</h1>
+		<div class="border"></div>
+		<p>Enter Your Email to get our news and updates.</p>
+		<form action="" class="newsletter-form">
+		  <input type="text" class="txtb" placeholder="Enter Your Email">
+		  <input type="submit" class="btn" value="submit">
+		</form>
+	  </div>
 	</div>
-</footer>
+  </footer>
 <script>
 	$(window).on("load",function(){
 		$(".loader-container").fadeOut(1000);

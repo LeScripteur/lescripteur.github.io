@@ -85,7 +85,7 @@ body {
 	font-size: 1.5rem;
 	text-align: center;
 	padding: 5px 0;
-	background: #7289da;
+	background: #df961e;
 	width: 100%;
 	font-family: "Ubuntu", sans-serif;
 }
@@ -141,32 +141,117 @@ a:hover:before {
 }
 
 footer {
-	background: #23272a;
-	bottom: 0;
-	width: 100%;
-	font-size: 1.3rem;
+	background: #f1f1f1;
+	padding: 90px 0;
 }
 
-#foot1,
-#foot2,
-#foot3,
-#foot4,
-#foot5 {
-	display: inline;
-	float: left;
-	width: 20%;
-	text-align: center;
+.footer-container {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
 }
 
-#foot6,
-#foot7,
-#foot8,
-#foot9,
-#foot10 {
-	display: inline;
-	float: left;
-	width: 20%;
-	text-align: center;
+.logo {
+	width: 180px;
+}
+
+.social-media {
+	margin: 20px 0;
+}
+
+.social-media a {
+	color: #001a21;
+	margin-right: 25px;
+	font-size: 22px;
+	text-decoration: none;
+	transition: .3s linear;
+}
+
+.social-media a:hover {
+	color: #fc5c65;
+}
+
+.right-col h1 {
+	font-size: 26px;
+}
+
+.border {
+	width: 100px;
+	height: 4px;
+	background: #fc5c65;
+}
+
+.newsletter-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.txtb {
+	flex: 1;
+	padding: 18px 40px;
+	font-size: 16px;
+	color: #293043;
+	background: #ddd;
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 30px;
+	min-width: 260px;
+}
+
+.btn {
+	padding: 18px 40px;
+	font-size: 16px;
+	color: #f1f1f1;
+	background: #fc5c65;
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 30px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: opacity .3s linear;
+}
+
+.btn:hover {
+	opacity: .7;
+}
+
+.page-content {
+	min-height: 100vh;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+	.footer-container {
+		max-width: 600px;
+	}
+	.right-col {
+		width: 100%;
+		margin-bottom: 60px;
+	}
+
+	.left-col {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.btn {
+		margin: 0;
+		width: 100%;
+		margin-top: 20px;
+	}
 }
 
 /* width */
@@ -193,7 +278,7 @@ footer {
 .loader-container {
 	width: 100%;
 	height: 100vh;
-	background-color: #7289da;
+	background-color: #df961e;
 	position: fixed;
 	display: flex;
 	align-items: center;
