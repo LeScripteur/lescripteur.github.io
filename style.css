@@ -232,7 +232,7 @@ footer {
 	color: #ffffff;
 	border-radius: 50%;
 	border-top-color: transparent;
-	animation: loader 1.2s linear infinite;
+	animation: loader 0.7s linear infinite;
 }
 
 @keyframes loader {
