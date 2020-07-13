@@ -108,7 +108,7 @@ li {
 	display: inline-flex;
 }
 
-a {
+li a {
 	position: relative;
 	padding: 1rem 0 0.5rem;
 	margin: 5% 1rem;
@@ -117,7 +117,7 @@ a {
 	text-transform: uppercase;
 }
 
-a:before {
+li a:before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -133,16 +133,26 @@ a:before {
 }
 
 a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #ffffff;
+	text-decoration: solid;
+}
+
+li a {
 	position: relative;
 	color: #ffffff;
 	text-decoration: none;
 }
 
-a:hover {
+li a:hover {
 	color: #ffffff;
 }
 
-a:hover:before {
+li a:hover:before {
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1.1);
