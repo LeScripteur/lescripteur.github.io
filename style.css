@@ -85,17 +85,26 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.logo {
+	width: 50%;
+	max-width: 100px;
+	padding: 2px 0px 0px 0px;
+}
 
 .menu {
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 999;
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	text-align: center;
-	padding: 2.5px 0;
+	padding: 2.5px 10%;
 	background: #df961e;
 	font-family: "Ubuntu", sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
 }
 
 ul {
@@ -165,9 +174,10 @@ footer {
 }
 
 .footer-container {
+	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 0 5px;
+	padding: 0 20px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -187,7 +197,25 @@ footer {
 	justify-content: center;
 }
 
+.title-menu {
+}
+
 @media screen and (max-width: 960px) {
+	.menu {
+		padding: 0 10% 0;
+		font-size: 15px;
+	}
+	main {
+		justify-content: space-evenly;
+	}
+	#text {
+		font-size: 17px;
+		align-items: center;
+		line-height: 200%;
+	}
+	.title-menu {
+		font-size: 0px;
+	}
 	.footer-container {
 		max-width: 600px;
 	}
