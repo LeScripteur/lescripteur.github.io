@@ -6,7 +6,7 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<title>LeScripteur</title>
+	<title>LeScripteur | About</title>
 
 	<link rel="icon" href=".\media\logo-c.png">
 
@@ -14,7 +14,11 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 </head>
@@ -24,7 +28,7 @@
 <body id="content">
 	<div>
 		<div>
-		<header class="menu">	
+		<header class="menu" data-aos="fade-down" data-aos-duration="1000">	
 			<div>
 				<h1 class="title-menu">LeScripteur</h1>
 			</div>
@@ -48,6 +52,7 @@
 	</div>
 		</header> 
 		</div>
+		<div data-aos="zoom-out"></div>
 	<main id="text">
 		<h1>Lorem ipsum is cool as freak !</h1>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed justo ullamcorper, tempus sem ut, mattis nunc. Aliquam dignissim condimentum interdum. Aenean urna felis, pellentesque ac accumsan sit amet, pellentesque quis enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet ultricies dictum. Donec tortor eros, fringilla quis scelerisque in, hendrerit eu massa. Nam ullamcorper odio dictum, lobortis nulla id, volutpat nunc. Duis in venenatis ex, nec efficitur orci. Sed pulvinar vulputate hendrerit. Proin id dolor vitae neque pellentesque porta et in ipsum. Donec rhoncus enim eu ipsum feugiat molestie.</p>
@@ -60,7 +65,8 @@
 		<br>
 		<p>Vestibulum metus quam, aliquet sed laoreet ac, fermentum id nisl. Nulla vitae facilisis enim, vitae tincidunt orci. Nullam venenatis vulputate dignissim. Morbi in enim ipsum. Praesent id bibendum velit. Ut erat nisi, fermentum mollis dictum vitae, feugiat in ligula. Cras ut scelerisque leo. Pellentesque tellus urna, tincidunt ut lorem eget, sodales faucibus metus. Quisque quis orci eu justo vestibulum dictum. Cras vitae nibh libero. Nulla ligula neque, elementum eget neque sed, porttitor commodo est. Aliquam eget purus elementum odio gravida euismod sit amet vel odio. Phasellus consequat massa euismod nisi tempus, non consectetur diam dictum. Ut eleifend purus sed tristique sollicitudin. Phasellus arcu neque, dapibus eget tortor ac, mattis pharetra dolor.</p>
 	</main>
-	</div>
+</div>
+</div>
 </div>
 <div class="wrapper">
 	<div class="wave"></div>
@@ -70,7 +76,7 @@
   </div>
 <footer>
 	<div class="footer-container">
-	  <div class="left-col">
+		<div class="left-col" data-aos="fade-right">
 		<p class="rights-text">© 2020 Created By LeScripteur | All Rights Reserved.</p>
 		<ul>
             <li>
@@ -87,15 +93,16 @@
         </li>
     </ul>
 	  </div>
-	  <div class="right-col">
+	  <div class="right-col" data-aos="fade-left">
 		<h1>Note</h1>
 		<p class="text-footer">"You look beautiful today 🙂"</p>
 	  </div>
 	</div>
   </footer>
-<script>
+  <script>
 	$(window).on("load",function(){
 		$(".loader-container").fadeOut(1500);
+		AOS.init();
 	});
 </script>
 </body>
