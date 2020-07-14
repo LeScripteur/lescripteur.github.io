@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,6 +10,7 @@
 
 body::-webkit-scrollbar {
 }
+
 .not-allowed-cursor {
 	cursor: not-allowed;
 }
@@ -25,7 +28,6 @@ body {
 
 div {
 	text-align: center;
-	font-family: calibri;
 	color: white;
 }
 
@@ -68,18 +70,12 @@ div {
 	width: 100%;
 }
 
-@font-face {
-	font-family: "AnotherDanger";
-	src: url('./assets/style/AnotherDanger.otf');
-}
-
 *,
 *::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	font-family: "Ubuntu", sans-serif;
 	box-sizing: border-box;
 }
 
@@ -100,15 +96,16 @@ body {
 	width: 100%;
 	top: 0;
 	z-index: 999;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	text-align: center;
 	padding: 2.5px 10%;
 	background: #df961e;
-	font-family: "Ubuntu", sans-serif;
+	font-family: calibri;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap-reverse;
+	margin: auto;
 }
 
 ul {
@@ -172,6 +169,7 @@ li a:hover:before {
 }
 
 footer {
+	font-family: 'Cabin Condensed', sans-serif;
 	background: #23272a;
 	padding: 70px 0;
 	bottom: 0;
@@ -179,7 +177,7 @@ footer {
 
 .footer-container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: auto;
 	padding: 0 20px;
 	display: flex;
@@ -210,10 +208,12 @@ footer {
 }
 
 .title-menu {
+	cursor: default;
 }
 
 @media screen and (max-width: 960px) {
 	.menu {
+		justify-content: center;
 		padding: 0 10% 0;
 		font-size: 15px;
 	}
