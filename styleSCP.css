@@ -49,7 +49,10 @@ div {
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
-	background: #2c2f33;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("./media/backscp.gif");
+
 	background-attachment: fixed;
 	background-position: center;
 }
@@ -124,7 +127,7 @@ body {
 	font-size: 1.2rem;
 	text-align: center;
 	padding: 2.5px 10%;
-	background: #23272a;
+	background: #222427;
 	font-family: calibri;
 	display: flex;
 	justify-content: space-between;
@@ -198,7 +201,7 @@ li a:hover:before {
 
 footer {
 	font-family: 'Cabin Condensed', sans-serif;
-	background: #23272a;
+	background: #222427;
 	padding: 70px 0;
 	bottom: 0;
 }
