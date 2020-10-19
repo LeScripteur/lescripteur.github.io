@@ -44,6 +44,10 @@ div {
 	padding: 1rem;
 }
 
+img {
+	border-radius: 15px;
+}
+
 #content {
 	display: flex;
 	height: 100vh;
@@ -51,6 +55,23 @@ div {
 	background: #2c2f33;
 	background-attachment: fixed;
 	background-position: center;
+}
+
+.text-left {
+	text-align: left;
+	image-rendering: auto;
+	flex: 2;
+}
+
+.text-right {
+	text-align: right;
+	image-rendering: auto;
+	flex: 2;
+}
+
+.text-group {
+	background: rgb(65, 65, 65, 0.1);
+	border-radius: 10px;
 }
 
 .left-align {

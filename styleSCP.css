@@ -56,6 +56,19 @@ div {
 	background-attachment: fixed;
 	background-position: center;
 }
+img {
+	border-radius: 15px;
+}
+
+.text-left {
+	text-align: left;
+	image-rendering: auto;
+}
+
+.text-right {
+	text-align: right;
+	image-rendering: auto;
+}
 
 .left-align {
 	text-align: left;
@@ -71,6 +84,16 @@ div {
 .right-align {
 	text-align: right;
 	align-items: right;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-group {
+	background: rgb(65, 65, 65, 0.1);
+	border-radius: 10px;
 }
 
 #text {
